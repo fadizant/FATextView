@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FATextView_Example' do
+  pod 'FATextView', :path => '../'
+
+  target 'FATextView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
