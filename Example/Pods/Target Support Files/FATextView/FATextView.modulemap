@@ -1,0 +1,6 @@
+framework module FATextView {
+  umbrella header "FATextView-umbrella.h"
+
+  export *
+  module * { export * }
+}

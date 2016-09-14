@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0673273B68532150C4DDB70352515B33 /* NSString+TextDirectionality.h in Headers */ = {isa = PBXBuildFile; fileRef = 009780B6398C56DE5EF27175D5057B17 /* NSString+TextDirectionality.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E9E578767AA59D5DF1F40EC95875E3 /* Pods-FATextView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4377A167DB0D589C378E270E74C48189 /* Pods-FATextView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0822C163727886D3BB0BA62A19036E41 /* FATextViewWithMovableKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = A64EE8B1B690641D1153DD2277D3D958 /* FATextViewWithMovableKeyboard.m */; };
+		115BF18701A25D1863D53B50DD2BD638 /* UIFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BDCA06E27CF558F1BB0EA657795B5 /* UIFloatLabeledTextView.m */; };
+		13964D9F3710CF9DB98FF4AF5DB2FEEA /* FATextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C8CCDEB04CABC754B12C5CF0FE22CC /* FATextView-dummy.m */; };
+		204FA618DD24F16BF5139F9F957F455F /* podImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D47B9040CE1CD4CD975498B576C56 /* podImage.m */; };
+		37C6C6BE383019D14CF1E279C470C2A6 /* FATextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A8069CB0D0B5CFD8EFB70270FD5559EE /* FATextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C498DD76E0BE39BBEC81B9390F1EE03 /* FATextViewWithMovableKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = E722C6CECEF39CE0C939468746B658F9 /* FATextViewWithMovableKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F5BB2A2530977597554DD3898931014 /* Pods-FATextView_Example-FATextView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D59FBD7B0874063C6F0862D12A7B44 /* Pods-FATextView_Example-FATextView_Tests-dummy.m */; };
+		82511C5E538E205FB647EE5A99CF4DA5 /* Pods-FATextView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C11E2FB70F24383AD4B700F02C1FB60 /* Pods-FATextView_Example-dummy.m */; };
+		91FD5D1BDD9F265E13279BAFDA8CC412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A57084707E90ED4934A8E557C9C02043 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = D32A0D9606121769F0F55EB0ED003C12 /* NSString+TextDirectionality.m */; };
+		AA90FDD8BE68D243F0D1354088B37AA4 /* FATextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB58B19F78059B5F83BC3B3F7C7D54F /* FATextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4FF2E5DA6D35E9A169CBEF2D58FABBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B7AA133613867C0E91C1D25773E2E6E5 /* podImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 66EC039EC421A458B1F5B90D7C2EB84E /* podImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCDCDE582B055292C4F73586BAD50D51 /* FAAssests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD51608C2FA877A1B8D0F506D139CB3 /* FAAssests.xcassets */; };
+		C30CBE422CFF55B16C23B15FCCEF0033 /* Pods-FATextView_Example-FATextView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D997B6A3964EB70B189CD4EE3EBB4323 /* Pods-FATextView_Example-FATextView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B0DE1BF2DD12959E29CA24256296A4 /* UIFloatLabeledTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = D5317BB1C5D44DE61ED52E7A81F0ECFD /* UIFloatLabeledTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F505F8EE451513FFB345EBFA4BEF0C4C /* FATextView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD738214F3713C636303785079CDFF3D /* FATextView.bundle */; };
+		F5E3ACCCAD3867FBA7C1CA8B2A90C66C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34EF8AFA0F846E7CEFB98999F8672EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F9C0CD4F95B6E1C22E3B1A56D418A0;
+			remoteInfo = "FATextView-FATextView";
+		};
+		8C0360B76600C0F7AD46C209419BB72C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D4887849DDE8DC4FA43C10CB5E0421;
+			remoteInfo = FATextView;
+		};
+		D49D55F1E8E14224921DA1F6464CA0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D4887849DDE8DC4FA43C10CB5E0421;
+			remoteInfo = FATextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009780B6398C56DE5EF27175D5057B17 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		05D81F9FEF6BC8C75F418D3E7F4596F8 /* FATextView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FATextView.xcconfig; sourceTree = "<group>"; };
+		061EBB16E3F7DC0BC3C2AB82F9382DC5 /* Pods_FATextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FATextView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10417E036E34E831A3513560B7E61411 /* Pods-FATextView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FATextView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		14EE12A3CFC389A50AD95A443462D3C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19161AA2EAB3743E47C4B5CEB70BAAE7 /* Pods-FATextView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FATextView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		249F33C881D600E2BCB73D8D1EEEA269 /* Pods-FATextView_Example-FATextView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FATextView_Example-FATextView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		27D11695193B63B69832BFA341129BA5 /* ResourceBundle-FATextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FATextView-Info.plist"; sourceTree = "<group>"; };
+		2B99149989496C0D83E60B830E3EC57B /* FATextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FATextView.modulemap; sourceTree = "<group>"; };
+		3550C91C03B6F2EF2E7CDBEEF8670D86 /* Pods-FATextView_Example-FATextView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FATextView_Example-FATextView_Tests-resources.sh"; sourceTree = "<group>"; };
+		37C8CCDEB04CABC754B12C5CF0FE22CC /* FATextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FATextView-dummy.m"; sourceTree = "<group>"; };
+		4377A167DB0D589C378E270E74C48189 /* Pods-FATextView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FATextView_Example-umbrella.h"; sourceTree = "<group>"; };
+		508BDCA06E27CF558F1BB0EA657795B5 /* UIFloatLabeledTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIFloatLabeledTextView.m; sourceTree = "<group>"; };
+		552B8F39EE5F3F5FFA3754F2D1821A52 /* Pods-FATextView_Example-FATextView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FATextView_Example-FATextView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		591DE813C72A5DE5F886C932E00BB4A3 /* Pods-FATextView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FATextView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5EB46DCCC2E245776FB65E3B07F4D3E3 /* Pods-FATextView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FATextView_Example-resources.sh"; sourceTree = "<group>"; };
+		66EC039EC421A458B1F5B90D7C2EB84E /* podImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = podImage.h; sourceTree = "<group>"; };
+		68365CAE8B69D676EF78B4810C004BE4 /* Pods-FATextView_Example-FATextView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FATextView_Example-FATextView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6C11E2FB70F24383AD4B700F02C1FB60 /* Pods-FATextView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FATextView_Example-dummy.m"; sourceTree = "<group>"; };
+		6D7D47B9040CE1CD4CD975498B576C56 /* podImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = podImage.m; sourceTree = "<group>"; };
+		70D59FBD7B0874063C6F0862D12A7B44 /* Pods-FATextView_Example-FATextView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FATextView_Example-FATextView_Tests-dummy.m"; sourceTree = "<group>"; };
+		8598E5A649B86383AC41281205CBAEDF /* FATextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FATextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A100B6DBA2065D01DA9B4E4B48CE99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94958E3F6CE789D2D228E3BA13BA8803 /* Pods-FATextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FATextView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		967026333D16485556CEA16657A58D2D /* Pods-FATextView_Example-FATextView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FATextView_Example-FATextView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9EB4DBF09105EF503BFA6E6DE3B7F37D /* Pods-FATextView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FATextView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A406117EBA3DC017BCDED217BD6203FD /* Pods_FATextView_Example_FATextView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FATextView_Example_FATextView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64EE8B1B690641D1153DD2277D3D958 /* FATextViewWithMovableKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FATextViewWithMovableKeyboard.m; sourceTree = "<group>"; };
+		A8069CB0D0B5CFD8EFB70270FD5559EE /* FATextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FATextView.h; sourceTree = "<group>"; };
+		AD738214F3713C636303785079CDFF3D /* FATextView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FATextView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC6DCA82EC8FCD1C87DC3C63EBE6B30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C297A86A165874B7731A1A6667CCF05B /* FATextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FATextView-prefix.pch"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D321099FD1EF6214CF66F66DD31CC1D2 /* Pods-FATextView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FATextView_Example.modulemap"; sourceTree = "<group>"; };
+		D32A0D9606121769F0F55EB0ED003C12 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		D5317BB1C5D44DE61ED52E7A81F0ECFD /* UIFloatLabeledTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIFloatLabeledTextView.h; sourceTree = "<group>"; };
+		D997B6A3964EB70B189CD4EE3EBB4323 /* Pods-FATextView_Example-FATextView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FATextView_Example-FATextView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E722C6CECEF39CE0C939468746B658F9 /* FATextViewWithMovableKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FATextViewWithMovableKeyboard.h; sourceTree = "<group>"; };
+		EBFEC9D0F9AA52BF9882FA0F8D1636DE /* Pods-FATextView_Example-FATextView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FATextView_Example-FATextView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EFB58B19F78059B5F83BC3B3F7C7D54F /* FATextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FATextView-umbrella.h"; sourceTree = "<group>"; };
+		EFFB0128EB0C8B34FB5F829D575CD5BA /* Pods-FATextView_Example-FATextView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FATextView_Example-FATextView_Tests.modulemap"; sourceTree = "<group>"; };
+		FBD51608C2FA877A1B8D0F506D139CB3 /* FAAssests.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = FAAssests.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18DE95088C6416F05A4DC8F20E7EBAD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5E3ACCCAD3867FBA7C1CA8B2A90C66C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53CB4B99E3B5969A6E95DF96B378124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD5D1BDD9F265E13279BAFDA8CC412 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A5AE251174E0B8DE8A8680842FE54E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4FF2E5DA6D35E9A169CBEF2D58FABBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF6C4072CD750365C05594F0B808F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		44E3AFC427799998521A6F74B99234E0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FBD51608C2FA877A1B8D0F506D139CB3 /* FAAssests.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5D3BBA90E5A70FC1BBC316252C542954 /* FATextView */ = {
+			isa = PBXGroup;
+			children = (
+				44E3AFC427799998521A6F74B99234E0 /* Assets */,
+			);
+			path = FATextView;
+			sourceTree = "<group>";
+		};
+		5F74D13EE6C5E68EC09143443E32F2A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD738214F3713C636303785079CDFF3D /* FATextView.bundle */,
+				8598E5A649B86383AC41281205CBAEDF /* FATextView.framework */,
+				061EBB16E3F7DC0BC3C2AB82F9382DC5 /* Pods_FATextView_Example.framework */,
+				A406117EBA3DC017BCDED217BD6203FD /* Pods_FATextView_Example_FATextView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C156AD4C1587147F6BF7AFDC2801178 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B99149989496C0D83E60B830E3EC57B /* FATextView.modulemap */,
+				05D81F9FEF6BC8C75F418D3E7F4596F8 /* FATextView.xcconfig */,
+				37C8CCDEB04CABC754B12C5CF0FE22CC /* FATextView-dummy.m */,
+				C297A86A165874B7731A1A6667CCF05B /* FATextView-prefix.pch */,
+				EFB58B19F78059B5F83BC3B3F7C7D54F /* FATextView-umbrella.h */,
+				14EE12A3CFC389A50AD95A443462D3C0 /* Info.plist */,
+				27D11695193B63B69832BFA341129BA5 /* ResourceBundle-FATextView-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FATextView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FA6D8D8C848CB7ABBC5454439CD4EE98 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5F74D13EE6C5E68EC09143443E32F2A6 /* Products */,
+				96DBD8CFB862E9D44FF596A7241C6118 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		96DBD8CFB862E9D44FF596A7241C6118 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFE673949CEB1DC28F5CAA9043386913 /* Pods-FATextView_Example */,
+				E9A96F16DA203831A6750F1F18ACB130 /* Pods-FATextView_Example-FATextView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD24A02F5F78C1E6F7DBACAD0C78FF14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D3BBA90E5A70FC1BBC316252C542954 /* FATextView */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9A96F16DA203831A6750F1F18ACB130 /* Pods-FATextView_Example-FATextView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BBC6DCA82EC8FCD1C87DC3C63EBE6B30 /* Info.plist */,
+				EFFB0128EB0C8B34FB5F829D575CD5BA /* Pods-FATextView_Example-FATextView_Tests.modulemap */,
+				249F33C881D600E2BCB73D8D1EEEA269 /* Pods-FATextView_Example-FATextView_Tests-acknowledgements.markdown */,
+				967026333D16485556CEA16657A58D2D /* Pods-FATextView_Example-FATextView_Tests-acknowledgements.plist */,
+				70D59FBD7B0874063C6F0862D12A7B44 /* Pods-FATextView_Example-FATextView_Tests-dummy.m */,
+				68365CAE8B69D676EF78B4810C004BE4 /* Pods-FATextView_Example-FATextView_Tests-frameworks.sh */,
+				3550C91C03B6F2EF2E7CDBEEF8670D86 /* Pods-FATextView_Example-FATextView_Tests-resources.sh */,
+				D997B6A3964EB70B189CD4EE3EBB4323 /* Pods-FATextView_Example-FATextView_Tests-umbrella.h */,
+				552B8F39EE5F3F5FFA3754F2D1821A52 /* Pods-FATextView_Example-FATextView_Tests.debug.xcconfig */,
+				EBFEC9D0F9AA52BF9882FA0F8D1636DE /* Pods-FATextView_Example-FATextView_Tests.release.xcconfig */,
+			);
+			name = "Pods-FATextView_Example-FATextView_Tests";
+			path = "Target Support Files/Pods-FATextView_Example-FATextView_Tests";
+			sourceTree = "<group>";
+		};
+		ED47DE915331A8B906EE5D514D77794A /* FATextView */ = {
+			isa = PBXGroup;
+			children = (
+				FBE881785B871917FD54650319F4823C /* FATextView */,
+				AD24A02F5F78C1E6F7DBACAD0C78FF14 /* Resources */,
+				7C156AD4C1587147F6BF7AFDC2801178 /* Support Files */,
+			);
+			name = FATextView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EFE673949CEB1DC28F5CAA9043386913 /* Pods-FATextView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				88A100B6DBA2065D01DA9B4E4B48CE99 /* Info.plist */,
+				D321099FD1EF6214CF66F66DD31CC1D2 /* Pods-FATextView_Example.modulemap */,
+				9EB4DBF09105EF503BFA6E6DE3B7F37D /* Pods-FATextView_Example-acknowledgements.markdown */,
+				19161AA2EAB3743E47C4B5CEB70BAAE7 /* Pods-FATextView_Example-acknowledgements.plist */,
+				6C11E2FB70F24383AD4B700F02C1FB60 /* Pods-FATextView_Example-dummy.m */,
+				591DE813C72A5DE5F886C932E00BB4A3 /* Pods-FATextView_Example-frameworks.sh */,
+				5EB46DCCC2E245776FB65E3B07F4D3E3 /* Pods-FATextView_Example-resources.sh */,
+				4377A167DB0D589C378E270E74C48189 /* Pods-FATextView_Example-umbrella.h */,
+				10417E036E34E831A3513560B7E61411 /* Pods-FATextView_Example.debug.xcconfig */,
+				94958E3F6CE789D2D228E3BA13BA8803 /* Pods-FATextView_Example.release.xcconfig */,
+			);
+			name = "Pods-FATextView_Example";
+			path = "Target Support Files/Pods-FATextView_Example";
+			sourceTree = "<group>";
+		};
+		FA6D8D8C848CB7ABBC5454439CD4EE98 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED47DE915331A8B906EE5D514D77794A /* FATextView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FBE881785B871917FD54650319F4823C /* FATextView */ = {
+			isa = PBXGroup;
+			children = (
+				FD3D99779660E67E6F6947E4EEBD978F /* Classes */,
+			);
+			path = FATextView;
+			sourceTree = "<group>";
+		};
+		FD3D99779660E67E6F6947E4EEBD978F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A8069CB0D0B5CFD8EFB70270FD5559EE /* FATextView.h */,
+				E722C6CECEF39CE0C939468746B658F9 /* FATextViewWithMovableKeyboard.h */,
+				A64EE8B1B690641D1153DD2277D3D958 /* FATextViewWithMovableKeyboard.m */,
+				009780B6398C56DE5EF27175D5057B17 /* NSString+TextDirectionality.h */,
+				D32A0D9606121769F0F55EB0ED003C12 /* NSString+TextDirectionality.m */,
+				66EC039EC421A458B1F5B90D7C2EB84E /* podImage.h */,
+				6D7D47B9040CE1CD4CD975498B576C56 /* podImage.m */,
+				D5317BB1C5D44DE61ED52E7A81F0ECFD /* UIFloatLabeledTextView.h */,
+				508BDCA06E27CF558F1BB0EA657795B5 /* UIFloatLabeledTextView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9025B07A3E7C55E196E9E57AC2421AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA90FDD8BE68D243F0D1354088B37AA4 /* FATextView-umbrella.h in Headers */,
+				37C6C6BE383019D14CF1E279C470C2A6 /* FATextView.h in Headers */,
+				6C498DD76E0BE39BBEC81B9390F1EE03 /* FATextViewWithMovableKeyboard.h in Headers */,
+				0673273B68532150C4DDB70352515B33 /* NSString+TextDirectionality.h in Headers */,
+				B7AA133613867C0E91C1D25773E2E6E5 /* podImage.h in Headers */,
+				E7B0DE1BF2DD12959E29CA24256296A4 /* UIFloatLabeledTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA77257C5BD725D9102C35F344871385 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E9E578767AA59D5DF1F40EC95875E3 /* Pods-FATextView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDAD44F2C8261082305AC0BFE4281139 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30CBE422CFF55B16C23B15FCCEF0033 /* Pods-FATextView_Example-FATextView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B955B5E65A59AB86C2E41467FF51723 /* Pods-FATextView_Example-FATextView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5EC6549BEA8FF9050DCB5B51EF2744 /* Build configuration list for PBXNativeTarget "Pods-FATextView_Example-FATextView_Tests" */;
+			buildPhases = (
+				075E11ADF3F6A91CA666FC0641427B8F /* Sources */,
+				18DE95088C6416F05A4DC8F20E7EBAD7 /* Frameworks */,
+				DDAD44F2C8261082305AC0BFE4281139 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86045933084FEC586E3F8B953F695D0F /* PBXTargetDependency */,
+			);
+			name = "Pods-FATextView_Example-FATextView_Tests";
+			productName = "Pods-FATextView_Example-FATextView_Tests";
+			productReference = A406117EBA3DC017BCDED217BD6203FD /* Pods_FATextView_Example_FATextView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32F9C0CD4F95B6E1C22E3B1A56D418A0 /* FATextView-FATextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7468D5CE08E4400D18CC091799DF13 /* Build configuration list for PBXNativeTarget "FATextView-FATextView" */;
+			buildPhases = (
+				8374FC94E4CDCCA49D87B1336CD8E14B /* Sources */,
+				CFF6C4072CD750365C05594F0B808F26 /* Frameworks */,
+				14043C92D514E0C8D30B010E3436AEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FATextView-FATextView";
+			productName = "FATextView-FATextView";
+			productReference = AD738214F3713C636303785079CDFF3D /* FATextView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		96D4887849DDE8DC4FA43C10CB5E0421 /* FATextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A188BD0E706596DA6F1A3CAAEDDE2864 /* Build configuration list for PBXNativeTarget "FATextView" */;
+			buildPhases = (
+				8082C312E3EF48EF9F45CB1E27C39631 /* Sources */,
+				B53CB4B99E3B5969A6E95DF96B378124 /* Frameworks */,
+				ED1CEF044FA13717D51435A9B54F66E9 /* Resources */,
+				A9025B07A3E7C55E196E9E57AC2421AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CE5BC92B03BC6FB239648C886C82C9D /* PBXTargetDependency */,
+			);
+			name = FATextView;
+			productName = FATextView;
+			productReference = 8598E5A649B86383AC41281205CBAEDF /* FATextView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF1D59D17A567A8C2BC9404EE51D7181 /* Pods-FATextView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98C6483743AE9766FE855D81F02D566F /* Build configuration list for PBXNativeTarget "Pods-FATextView_Example" */;
+			buildPhases = (
+				7D83D0E12B49BC8440D0248D12B1642B /* Sources */,
+				C1A5AE251174E0B8DE8A8680842FE54E /* Frameworks */,
+				BA77257C5BD725D9102C35F344871385 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3617524465A662D9BE484E916760A28 /* PBXTargetDependency */,
+			);
+			name = "Pods-FATextView_Example";
+			productName = "Pods-FATextView_Example";
+			productReference = 061EBB16E3F7DC0BC3C2AB82F9382DC5 /* Pods_FATextView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5F74D13EE6C5E68EC09143443E32F2A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96D4887849DDE8DC4FA43C10CB5E0421 /* FATextView */,
+				32F9C0CD4F95B6E1C22E3B1A56D418A0 /* FATextView-FATextView */,
+				CF1D59D17A567A8C2BC9404EE51D7181 /* Pods-FATextView_Example */,
+				0B955B5E65A59AB86C2E41467FF51723 /* Pods-FATextView_Example-FATextView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14043C92D514E0C8D30B010E3436AEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDCDE582B055292C4F73586BAD50D51 /* FAAssests.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1CEF044FA13717D51435A9B54F66E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F505F8EE451513FFB345EBFA4BEF0C4C /* FATextView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		075E11ADF3F6A91CA666FC0641427B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5BB2A2530977597554DD3898931014 /* Pods-FATextView_Example-FATextView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D83D0E12B49BC8440D0248D12B1642B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82511C5E538E205FB647EE5A99CF4DA5 /* Pods-FATextView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8082C312E3EF48EF9F45CB1E27C39631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13964D9F3710CF9DB98FF4AF5DB2FEEA /* FATextView-dummy.m in Sources */,
+				0822C163727886D3BB0BA62A19036E41 /* FATextViewWithMovableKeyboard.m in Sources */,
+				A57084707E90ED4934A8E557C9C02043 /* NSString+TextDirectionality.m in Sources */,
+				204FA618DD24F16BF5139F9F957F455F /* podImage.m in Sources */,
+				115BF18701A25D1863D53B50DD2BD638 /* UIFloatLabeledTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8374FC94E4CDCCA49D87B1336CD8E14B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86045933084FEC586E3F8B953F695D0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FATextView;
+			target = 96D4887849DDE8DC4FA43C10CB5E0421 /* FATextView */;
+			targetProxy = 8C0360B76600C0F7AD46C209419BB72C /* PBXContainerItemProxy */;
+		};
+		8CE5BC92B03BC6FB239648C886C82C9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FATextView-FATextView";
+			target = 32F9C0CD4F95B6E1C22E3B1A56D418A0 /* FATextView-FATextView */;
+			targetProxy = 34EF8AFA0F846E7CEFB98999F8672EAD /* PBXContainerItemProxy */;
+		};
+		F3617524465A662D9BE484E916760A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FATextView;
+			target = 96D4887849DDE8DC4FA43C10CB5E0421 /* FATextView */;
+			targetProxy = D49D55F1E8E14224921DA1F6464CA0B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		193F3E4648D5E53E2CD8BBCA63F3E1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D81F9FEF6BC8C75F418D3E7F4596F8 /* FATextView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FATextView/FATextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FATextView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FATextView/FATextView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FATextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E64B8AF529BDAADD0E6343CCDA3C49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10417E036E34E831A3513560B7E61411 /* Pods-FATextView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FATextView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FATextView_Example/Pods-FATextView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FATextView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B8CA35C1B2C11F22DCD3F25EB513B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBFEC9D0F9AA52BF9882FA0F8D1636DE /* Pods-FATextView_Example-FATextView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FATextView_Example-FATextView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FATextView_Example-FATextView_Tests/Pods-FATextView_Example-FATextView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FATextView_Example_FATextView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E489B43E717410CF88F9BFDC94C0501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94958E3F6CE789D2D228E3BA13BA8803 /* Pods-FATextView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FATextView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FATextView_Example/Pods-FATextView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FATextView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		806D95BCA852740DB67FEF8558CA0A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D81F9FEF6BC8C75F418D3E7F4596F8 /* FATextView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FATextView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FATextView/ResourceBundle-FATextView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FATextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		840FDE1358111866767D9EBFE1019C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D81F9FEF6BC8C75F418D3E7F4596F8 /* FATextView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FATextView/FATextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FATextView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FATextView/FATextView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FATextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A87989E15F7547626319566A0446BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D81F9FEF6BC8C75F418D3E7F4596F8 /* FATextView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FATextView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FATextView/ResourceBundle-FATextView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FATextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EF399682EB7BCD2490A51D5924E5543D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552B8F39EE5F3F5FFA3754F2D1821A52 /* Pods-FATextView_Example-FATextView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FATextView_Example-FATextView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FATextView_Example-FATextView_Tests/Pods-FATextView_Example-FATextView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FATextView_Example_FATextView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F5EC6549BEA8FF9050DCB5B51EF2744 /* Build configuration list for PBXNativeTarget "Pods-FATextView_Example-FATextView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF399682EB7BCD2490A51D5924E5543D /* Debug */,
+				5B8CA35C1B2C11F22DCD3F25EB513B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F7468D5CE08E4400D18CC091799DF13 /* Build configuration list for PBXNativeTarget "FATextView-FATextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A87989E15F7547626319566A0446BE6 /* Debug */,
+				806D95BCA852740DB67FEF8558CA0A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98C6483743AE9766FE855D81F02D566F /* Build configuration list for PBXNativeTarget "Pods-FATextView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E64B8AF529BDAADD0E6343CCDA3C49B /* Debug */,
+				7E489B43E717410CF88F9BFDC94C0501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A188BD0E706596DA6F1A3CAAEDDE2864 /* Build configuration list for PBXNativeTarget "FATextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840FDE1358111866767D9EBFE1019C48 /* Debug */,
+				193F3E4648D5E53E2CD8BBCA63F3E1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

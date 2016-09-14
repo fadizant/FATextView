@@ -1,0 +1,26 @@
+{
+  "name": "FATextView",
+  "version": "0.1.0",
+  "summary": "init FATextView.",
+  "homepage": "https://github.com/fadizant/FATextView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fadizant": "fadizant@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/fadizant/FATextView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FATextView/Classes/**/*",
+  "resource_bundles": {
+    "FATextView": [
+      "FATextView/Assets/*.xcassets"
+    ]
+  }
+}

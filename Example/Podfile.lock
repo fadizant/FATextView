@@ -1,0 +1,16 @@
+PODS:
+  - FATextView (0.1.0)
+
+DEPENDENCIES:
+  - FATextView (from `../`)
+
+EXTERNAL SOURCES:
+  FATextView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FATextView: 3d3e725c83b5b079a86d37a5aecfd956d24ccd5e
+
+PODFILE CHECKSUM: e08e4b014094107b5e7d6e904e5cf2da5869ff65
+
+COCOAPODS: 1.0.1
