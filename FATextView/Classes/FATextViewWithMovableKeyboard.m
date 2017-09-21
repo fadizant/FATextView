@@ -128,7 +128,7 @@
 //Handle keyboard
 - (void)keyboardWasShownHide:(NSNotification *)notification {
     // Get the size of the keyboard.
-    CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
     
     UIView *parant = self.superview;
     CGRect parantFrame = parant.frame;
@@ -260,12 +260,22 @@
 
 -(void)hideKeyboard {
     [self.superview endEditing:YES];
+    
+    //to handle hide keyboard if needed
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:UITextViewTextDidEndEditingNotification
+     object:self];
 }
 
 //Hide in click Done
 -(void)yourTextViewDoneButtonPressed
 {
     [self resignFirstResponder];
+    
+    //to handle hide keyboard if needed
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:UITextViewTextDidEndEditingNotification
+     object:self];
 }
 //Next text field
 -(void)yourTextViewNextButtonPressed
