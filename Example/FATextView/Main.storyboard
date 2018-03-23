@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,12 +18,53 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="just 100 char" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-kv-5we" customClass="FATextViewWithMovableKeyboard">
+                                <rect key="frame" x="67" y="91" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="AgR-lF-N3i"/>
+                                    <constraint firstAttribute="width" constant="240" id="gh8-bV-Jsm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="toolBar" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="toolBarNextPre" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.29803921570000003" green="0.67450980390000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderSelectedColor">
+                                        <color key="value" red="0.81960784310000001" green="0.88235294119999996" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderEditingColor">
+                                        <color key="value" red="0.29803921570000003" green="0.67450980390000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderCorner">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textStartPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textTopPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textLimitCharacters">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="toolBarColor">
+                                        <color key="value" red="0.29803921570000003" green="0.67450980390000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gZW-rc-FQH" customClass="UIFloatLabeledTextView">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="bR1-Ym-iqI"/>
                                     <constraint firstAttribute="width" constant="240" id="wHF-Ne-iOx"/>
@@ -31,13 +76,13 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="toolBar" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="toolBarNextPre" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="toolBarColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.99215686270000003" green="0.78039215689999997" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.99215686270000003" green="0.78039215689999997" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderEditingColor">
-                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -48,21 +93,21 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="moveWithKeyboard" value="YES"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Write your note ..."/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="floatingLabelShouldLockToTop" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-fa-5Pe" customClass="UIFloatLabeledTextView">
-                                <rect key="frame" x="40" y="378" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="67.5" y="427.5" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="3k3-B4-Dvb"/>
                                     <constraint firstAttribute="height" constant="128" id="vVM-H3-fva"/>
@@ -72,26 +117,26 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Bio ...."/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
-                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
-                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="toolBar" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="toolBarNextPre" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="toolBarColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomBorder" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderSelectedColor">
-                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderEditingColor">
-                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.54901960780000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -101,20 +146,21 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="moveWithKeyboard" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
-                                        <color key="value" red="0.99215686270000003" green="0.78039215689999997" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.99215686270000003" green="0.78039215689999997" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JNW-kv-5we" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="1CI-Jj-euf"/>
                             <constraint firstItem="B5d-fa-5Pe" firstAttribute="top" secondItem="gZW-rc-FQH" secondAttribute="bottom" constant="30" id="K43-qZ-0zr"/>
                             <constraint firstItem="B5d-fa-5Pe" firstAttribute="centerX" secondItem="gZW-rc-FQH" secondAttribute="centerX" id="TLf-7b-EvO"/>
                             <constraint firstItem="gZW-rc-FQH" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="XsE-WJ-zZx"/>
                             <constraint firstItem="gZW-rc-FQH" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="mMW-Jd-EbH"/>
+                            <constraint firstItem="gZW-rc-FQH" firstAttribute="top" secondItem="JNW-kv-5we" secondAttribute="bottom" constant="50" id="r8F-AA-reK"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

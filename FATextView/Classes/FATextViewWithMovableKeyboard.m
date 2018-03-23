@@ -12,12 +12,12 @@
 @implementation FATextViewWithMovableKeyboard
 @synthesize tap;
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -35,7 +35,7 @@
                                                    object:nil];
         
         tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hideKeyboard)];
-
+        
         super.delegate = self;
         
         if (CGRectEqualToRect(self.initFrame, CGRectZero)) {
@@ -55,7 +55,7 @@
                                                     name:UIKeyboardWillHideNotification
                                                   object:nil];
     
-
+    
 }
 
 -(void)removeMoving
@@ -105,22 +105,36 @@
         [self.layer setCornerRadius:_borderCorner];
         [self.layer setMasksToBounds:YES];
     }
+    
+    // set padding
+    self.textContainerInset =UIEdgeInsetsMake(_textTopPadding ? _textTopPadding : self.textContainerInset.top,
+                                              _textStartPadding ? _textStartPadding : self.textContainerInset.left,
+                                              self.textContainerInset.bottom,
+                                              _textStartPadding ? _textStartPadding : self.textContainerInset.right);
+}
+
+// char limit
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    if (_textLimitCharacters) {
+        return textView.text.length + (text.length - range.length) <= _textLimitCharacters;
+    }
+    return YES;
 }
 
 - (void)textViewDidBeginEditing:(UITextView *)textView
 {
-//    if([super.delegate respondsToSelector:@selector(textViewDidBeginEditing:)]){
-//        [super.delegate textViewDidBeginEditing:textView];
-//    }
+    //    if([super.delegate respondsToSelector:@selector(textViewDidBeginEditing:)]){
+    //        [super.delegate textViewDidBeginEditing:textView];
+    //    }
     isEditing = YES;
     [self layoutSubviews];
 }
 
 - (void)textViewDidEndEditing:(UITextView *)textView
 {
-//    if([super.delegate respondsToSelector:@selector(textViewDidEndEditing:)]){
-//        [super.delegate textViewDidEndEditing:textView];
-//    }
+    //    if([super.delegate respondsToSelector:@selector(textViewDidEndEditing:)]){
+    //        [super.delegate textViewDidEndEditing:textView];
+    //    }
     isEditing = NO;
     [self layoutSubviews];
 }
@@ -134,9 +148,9 @@
     CGRect parantFrame = parant.frame;
     float animationDelay = 0;
     
-//    if (CGRectEqualToRect(self.initFrame, CGRectZero)) {
-//        self.initFrame = parant.frame;
-//    }
+    //    if (CGRectEqualToRect(self.initFrame, CGRectZero)) {
+    //        self.initFrame = parant.frame;
+    //    }
     
     
     if (![parant.gestureRecognizers containsObject:tap]) {
@@ -156,8 +170,8 @@
         
         //scroll to view
         CGRect frame = self.frame;
-//        frame.size.height = (keyboardSize.height + frame.size.height + frame.origin.y) > parant.frame.size.height ? frame.size.height : (keyboardSize.height + frame.size.height);
-//        frame.size.height =  parantFrame.size.height - frame.origin.y;
+        //        frame.size.height = (keyboardSize.height + frame.size.height + frame.origin.y) > parant.frame.size.height ? frame.size.height : (keyboardSize.height + frame.size.height);
+        //        frame.size.height =  parantFrame.size.height - frame.origin.y;
         frame.size.height +=  keyboardSize.height;
         
         [((UIScrollView*)parant.superview) scrollRectToVisible:frame animated:NO];
@@ -197,8 +211,8 @@
         [UIView commitAnimations];
     });
     
-
-
+    
+    
 }
 
 
@@ -314,3 +328,4 @@
 }
 
 @end
+

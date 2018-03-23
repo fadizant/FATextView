@@ -44,6 +44,18 @@ IB_DESIGNABLE
  */
 @property (nonatomic) IBInspectable CGFloat borderCorner;
 /**
+ * X padding
+ */
+@property (nonatomic) IBInspectable CGFloat textStartPadding;
+/**
+ * Y padding
+ */
+@property (nonatomic) IBInspectable CGFloat textTopPadding;
+/**
+ * Limit number of Characters
+ */
+@property (nonatomic) IBInspectable CGFloat textLimitCharacters;
+/**
  * Allow view to move with keyboard
  *
  * Defaults false
@@ -59,3 +71,4 @@ IB_DESIGNABLE
 -(void)hideKeyboard;
 - (void)keyboardWasShownHide:(NSNotification *)notification;
 @end
+
